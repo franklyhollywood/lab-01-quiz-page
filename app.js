@@ -37,7 +37,7 @@ button.addEventListener('click', () => {
 		`Thank you ${firstName} for taking the quiz.  We will let you know how you did.`
 	);
 
-	result.textContent = `${firstName} ${lastName}, you got ${correctAnswers} correct answers!`;
+	result.textContent = `${firstName} ${lastName}, you got ${correctAnswers} out of 3 correct answers!`;
 });
 
 //then compare to the correct answer. Track number of correct responses.

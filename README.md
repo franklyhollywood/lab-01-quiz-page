@@ -15,3 +15,5 @@
 Span: So that the results of the quiz can be displayed.
 #5 State: yes, we need to keep track of right and wrong answers as well as the users name.
 #6 Events: On Button click we will start the quiz with the first prompt.
+#7 Console.log: Button, and span for answers to make sure we are getting them.
+run through questions and answers as they are written.

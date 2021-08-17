@@ -9,7 +9,7 @@ test('time to test a function', (expect) => {
 });
 
 test('time to test a function', (expect) => {
-	const expected = true;
+	const expected = false;
 	const actual = answerCounts('noooooo');
 
 	expect.equal(actual, expected);

@@ -2,6 +2,8 @@
 import { answerCounts } from './utils.js';
 const result = document.getElementById('resultsSpan');
 const button = document.getElementById('quizButton');
+const badResultEl = document.getElementById('badResult')
+const resetButton = document.getElementById('buttonReset')
 
 // set event listeners
 button.addEventListener('click', () => {
@@ -43,10 +45,17 @@ button.addEventListener('click', () => {
 	//Write a response to the page with their name and number correct, for example: "Okay Bernice, you got 2/3 correct".
 	//Add different text content ('Great work!' 'Needs improvement!', etc) based on user's results
 	if (correctAnswers < 1) {
-		result.textContent = `read the page buddy`;
-	} else {
+		badResultEl.textContent = `Read the page buddy!`;
+		button.style.backgroundColor = 'red'; }
+	else if (correctAnswers > 2) {
+		button.style.backgroundColor = 'green';
 		result.textContent = `${firstName} ${lastName}, you got ${correctAnswers} out of 3 correct answers!`;
 	}
+
+});
+
+resetButton.addEventListener('click', () => {
+	location.reload();
 });
 
 //STRETCH goal(s):

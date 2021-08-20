@@ -96,3 +96,15 @@ footer {
 #quizButton:hover {
 	transform: scale(1.3);
 }
+
+#buttonReset {
+	margin-top: 10px;
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+	transition: all 0.2s ease-in-out;
+}
+
+#buttonReset:hover {
+	transform: scale(1.3);
+}
